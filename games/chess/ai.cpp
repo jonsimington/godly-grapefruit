@@ -19,7 +19,7 @@ namespace chess
 std::string AI::get_name() const
 {
     // REPLACE WITH YOUR TEAM NAME!
-    return "Anthony Nguyen";
+    return "Godly Grapefruit";
 }
 
 /// <summary>
@@ -216,7 +216,7 @@ void AI::actionSet(const State& s, std::vector<Action>& actions, const bool& che
 					board[file_offset][rank-1] = 0;
 				if (owner == 1)
 					board[file_offset][rank-1] = 1;
-			}	
+			}
 		}
 	}
 
@@ -904,7 +904,7 @@ int AI::eval(const State& s)
 	State check = s;
 	check.turn = !check.turn;
 
-	if (checkCheck(check) == false) 
+	if (checkCheck(check) == false)
 	{
 		std::vector<Action> currentActions;
 		actionSet(s, currentActions, 0);
